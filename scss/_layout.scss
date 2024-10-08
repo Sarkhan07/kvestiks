@@ -1,0 +1,324 @@
+.header {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  height: 56px;
+  background-color: #ffffff;
+  padding: 8px;
+
+  .burger-menu {
+    display: none;
+  }
+
+  .logo {
+    width: 136px;
+    height: 23px;
+    margin-right: 797px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 32px;
+
+      &-img {
+        margin: 0 9px;
+      }
+    }
+
+
+
+    .text {
+      margin-top: 4px;
+      margin-right: 32px;
+      color: #383838;
+      font-size: 10px;
+      font-weight: 600;
+    }
+  }
+}
+
+
+.first-section {
+  background-color: #DDDDDD;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .container {
+    width: 1116px;
+
+
+    .first-container {
+      display: flex;
+    }
+
+
+    .breadcrumb {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #424242;
+      font-weight: 400;
+    }
+
+    .main-block {
+      display: flex;
+      background-color: #fff;
+      margin-top: 32px;
+      padding: 32px;
+      max-width: 831px;
+      min-height: 361px;
+
+      .left-block {
+
+
+        .title {
+          font-size: 36px;
+          font-weight: 800;
+          margin-bottom: 12px;
+        }
+
+        .rectangles {
+          display: flex;
+          max-width: 297px;
+          flex-wrap: wrap;
+          gap: 6px;
+          margin-bottom: 12px;
+
+          .rectangle {
+            min-width: 63px;
+            height: 29px;
+            padding: 6px 12px;
+            background-color: #ccc;
+          }
+        }
+
+        .description {
+          margin-top: 12px;
+          width: 297px;
+          font-size: 16px;
+          color: #424242;
+        }
+      }
+
+      .right-block {
+        background-image: url('/img/cover.png');
+        width: 510px;
+        height: 361px;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .payment-block {
+      margin-top: 32px;
+      margin-left: 24px;
+      width: 261px;
+      height: 229px;
+      background-color: #fff;
+      padding: 16px;
+
+      .payment-text {
+        font-size: 13px;
+        color: #383838;
+        margin-bottom: 8px;
+      }
+
+      .icons {
+        display: flex;
+        gap: 18px;
+        margin-bottom: 8px;
+
+        .icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .payment-question {
+        font-size: 16px;
+        color: #383838;
+
+        span {
+          color: #DD4E00;
+        }
+      }
+
+      .button {
+        margin-top: 24px;
+        width: 219px;
+        height: 52px;
+        background-color: #F77833;
+        text-align: center;
+        line-height: 52px;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+// .second-section {
+// margin-top: 48px;
+// text-align: center;
+
+.reviews-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.reviews-title span {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.reviews-block {
+  display: flex;
+  justify-content: space-between;
+  width: 831px;
+  overflow-x: auto;
+  scrollbar-color: #A8A8A8 transparent;
+  scrollbar-width: thin;
+
+  .card {
+    width: 261px;
+    height: 432px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 10px 30px 20px;
+    margin-right: 24px;
+
+    .date {
+      font-size: 14px;
+      color: #424242;
+    }
+
+    .name {
+      font-size: 12px;
+      margin-top: 16px;
+    }
+
+    .stars {
+      margin-top: 6px;
+    }
+
+    .review-text {
+      font-style: 14px;
+    }
+  }
+}
+
+.all-reviews-button {
+  // margin-top: 24px;
+  display: block;
+  margin: 24px auto;
+  width: 437px;
+  height: 52px;
+  background-color: #F77833;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  line-height: 52px;
+}
+
+
+@media (max-width: 360px) {
+  .header {
+    padding: 24px;
+
+    .logo {
+      margin-right: 94px;
+    }
+
+    .burger-menu {
+      width: 24px;
+      height: 24px;
+    }
+
+    .icons {
+      margin-left: 94px;
+    }
+  }
+
+
+  .first-section {
+    .container {
+      .main-block {
+        flex-direction: column;
+
+        .left-block {
+          padding: 16px;
+
+          .title {
+            font-size: 28px;
+            font-weight: 800;
+          }
+
+          .rectangles {
+            gap: 18px;
+            margin-bottom: 18px;
+
+            .rectangle {
+              width: auto;
+              height: 29px;
+            }
+          }
+
+          .description {
+            margin-top: 18px;
+            font-size: 16px;
+            color: #424242;
+          }
+        }
+
+        .right-block {
+          width: 100%;
+          height: auto;
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+
+  .second-section {
+    .reviews-block {
+      overflow: hidden;
+
+      .card {
+        display: none;
+
+        &:first-child {
+          display: block;
+        }
+      }
+
+      .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+
+        .dot {
+          width: 8px;
+          height: 8px;
+          background-color: #8A8A8A;
+          border-radius: 50%;
+          margin-right: 8px;
+
+          &.active {
+            width: 16px;
+            height: 8px;
+            background-color: #424242;
+          }
+        }
+      }
+    }
+  }
+}
